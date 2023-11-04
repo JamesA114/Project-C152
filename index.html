@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  
+  <script src="rotate.js"></script>
+  
+</head>
+
+<body>
+<a-assets>
+    <a-asset-item id = "car-obj" src = "./tinker.obj"></a-asset-item>
+    <a-asset-item id = "car-mtl" src = "./obj.mtl"></a-asset-item>
+</a-assets>
+  <a-scene background="color:#DDDDFF">
+
+    <a-camera position="-1 1 3">
+
+    </a-camera>
+    <a-entity rotate-car position = "0 0 0" obj-model="obj:#car-obj; mtl:#car-mtl" scale = ".01 .01 .01" rotation = "-90 0 0">
+
+    </a-entity>
+    
+
+  </a-scene>
+
+</body>
+
+</html>
